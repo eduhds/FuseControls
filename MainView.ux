@@ -1,3 +1,11 @@
-<App>
-    <Text Value="Hello World!" />
+<App Model="src/Models/App">
+    <iOS.StatusBarConfig Style="Light" />
+	<Android.StatusBarConfig Color="#022328" />
+	
+	<ClientPanel>
+		<Navigator Pages="{current.navigation.pages}">
+			<SplashPage ux:Template="SplashPage" />
+			<HomePage ux:Template="HomePage" />
+		</Navigator>
+	</ClientPanel>
 </App>
