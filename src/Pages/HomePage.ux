@@ -1,0 +1,30 @@
+<Page ux:Class="HomePage">
+	<DockPanel>
+		<Text 
+			FontSize="30" 
+			TextAlignment="Center" 
+			Dock="Top" 
+			Margin="0,50">
+			Home
+		</Text>
+
+		<ScrollView>
+			<StackPanel>
+				<Rectangle ux:Class="Separator" Height="1" Fill="#000000" />
+
+				<Each Items="{controls}">
+					<Separator />
+
+					<Panel HitTestMode="LocalBoundsAndChildren">
+						<Text Value="{name}" Margin="20" />
+						<WhilePressed>
+							<Scale Factor=".95" Duration=".08" Easing="QuadraticOut" />
+						</WhilePressed>
+					</Panel>
+				</Each>
+
+				<Separator />
+			</StackPanel>
+		</ScrollView>
+	</DockPanel>
+</Page>
