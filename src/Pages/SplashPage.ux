@@ -1,0 +1,27 @@
+<Page ux:Class="SplashPage">
+	<DockPanel ClipToBounds="true">
+		<Image 
+			Layer="Background" 
+			File="../Assets/background.jpg" 
+			StretchMode="Fill" 
+			Opacity=".7"
+		/>
+
+		<StackPanel Alignment="VerticalCenter">
+			<Text 
+				Alignment="HorizontalCenter" 
+				FontSize="30"
+				Opacity=".8"
+				Color="#000000">
+				Fuse Controls
+			</Text>
+			<Text 
+				Alignment="HorizontalCenter" 
+				FontSize="18"
+				Opacity=".5"
+				Color="#000000">
+				get out there
+			</Text>
+		</StackPanel>
+	</DockPanel>
+</Page>
