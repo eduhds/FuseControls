@@ -1,0 +1,11 @@
+{
+	"name": "fusecontrols",
+	"version": "1.0.0",
+	"description": "",
+	"scripts": {
+		"android": "uno build android --run"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC"
+}
